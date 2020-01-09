@@ -1,5 +1,7 @@
 ---
-    # run locally here, yadda yadda yadda
-    - hosts: remote
-      roles:
-        - nginx
+  # run locally here, yadda yadda yadda
+  - hosts: remote
+    become: yes
+    roles:
+      - nginx
+      - users
